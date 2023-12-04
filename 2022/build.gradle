@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.7.20'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.21'
 }
 
 group = 'org.example'
@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
 }
 
 test {
