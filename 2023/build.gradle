@@ -2,7 +2,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.9.21'
 }
 
-group = 'advent.of.code.2022'
+group = 'advent.of.code.2023'
 version = '1.0-SNAPSHOT'
 
 repositories {
