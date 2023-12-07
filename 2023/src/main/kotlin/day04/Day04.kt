@@ -5,8 +5,7 @@ import kotlin.math.pow
 
 fun ptrFuncPart1(lines: List<String>): Int {
     return lines.sumOf { line ->
-        val matchResult =
-            Regex("Card *([0-9]*): *(.*) [|] *(.*)").matchEntire(line)!! // Another Regex for you sweet bridou_n
+        val matchResult = Regex("Card *([0-9]*): *(.*) [|] *(.*)").matchEntire(line)!! // Another Regex for you sweet bridou_n
         val winningNbs = matchResult.groupValues[2].split(Regex(" +")).map { it.toInt() }
         val nbs = matchResult.groupValues[3].split(Regex(" +")).map { it.toInt() }
         winningNbs.intersect(nbs.toSet()).takeIf { it.isNotEmpty() }?.let {
