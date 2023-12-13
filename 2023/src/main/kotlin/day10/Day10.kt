@@ -84,6 +84,7 @@ fun ptrFuncPart2(lines: List<String>, startValue: Char): Int {
     map[i][j] = map[i][j].copy(startValue)
     doStuff(map, i, j)
 
+    // Théorème de Jordan qui, entre autres, permet de savoir si un point est dans un polygone ou à l'extérieur
     var nbOfPoints = 0
     map.forEach { line ->
         var intersections = 0
